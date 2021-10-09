@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>       
+  <session-factory>
+    <!-- Database connection settings -->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/ecommerce</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">Manal@0930</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="show_sql">true</property>
+    
+ 
+    <mapping class="com.simplilearn.model.Admin"/>
+	<mapping class="com.simplilearn.model.Airline"/>
+	<mapping class="com.simplilearn.model.Airport"/>
+	<mapping class="com.simplilearn.model.Customer"/>
+	<mapping class="com.simplilearn.model.Flight"/>
+	<mapping class="com.simplilearn.model.FlightRegistry"/>
+	<mapping class="com.simplilearn.model.Payment"/>
+  </session-factory>
+</hibernate-configuration>
